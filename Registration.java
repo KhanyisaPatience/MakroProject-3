@@ -1,3 +1,4 @@
+//Registration class
 class Registration {
 
 fullName;
