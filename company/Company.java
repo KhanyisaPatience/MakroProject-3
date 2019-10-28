@@ -1,3 +1,4 @@
+//this is the company class
 class Company{
 name;
 address;
