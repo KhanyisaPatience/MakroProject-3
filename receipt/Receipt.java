@@ -1,27 +1,44 @@
 
-class Payment{
+ class Receipt{
+
  private String shopName;
+ private int cardNumber;
  private int date;
+ private int time;
  private String tellerName;
  private int quantity;
- private double balance;
- private int time;
- private double amountPaid;
+ private String productName;
+ private double price;
+ private double amountDue;
+ private static final int VAT = 15;
+ private double totalBalance;
  private String typeOfPayment;
 
  public void setShopeName(String shopName){
- this.shopName = shopname;
+ this.shopName = shopName;
 }
  public String getShopName(){
 return shopName;
 }
- public void setDate(int date){
+public void setCardNumber(int cardNumber){
+this.cardNumber;
+}
+public int getCardNumber(){
+return cardNumber;
+
+public void setDate(int date){
  this.date = date;
 }
  public int getDate(){
  return date;
 }
- public void setTellerName(String tellerName){
+publc void setTime(int time){
+ this.time = time; 
+}
+publi int getTime(){
+return time;
+}
+public void setTellerName(String tellerName){
  this.tellerName = tellerName;
 }
  public String getTellerName(){
@@ -33,12 +50,17 @@ return shopName;
  public int getQuantity(){
 return quantity;
 }
-public void setTime(int time){
-this.time = time;
+public void setProductName(){
+this.productName = productName;
 }
-public int getTime(){
-return time;
+public String getProductName(){
+return productName;
 }
+public void setPrice(double price){
+this.price = price;
+}
+
+
 public void setBalance(double balance){
 this.balance = balance;
 }
@@ -58,7 +80,6 @@ public String getTypeOfPayment(){
 return typeOfPayment;
 }
 }
-}
 
 
 
@@ -77,4 +98,5 @@ return typeOfPayment;
 
 
 
-}
+
+
