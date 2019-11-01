@@ -1,6 +1,6 @@
 import java.util.scanner;
 
-class Customer extends Pesrson{
+class Customer extends Person{
 
   private int cardNumber;
   private string userName;
