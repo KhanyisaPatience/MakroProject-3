@@ -1,3 +1,4 @@
+//company class
 package za.co.Makro.company;
 import za.co.Makro.inventory.Product;
 public abstract class Company{
