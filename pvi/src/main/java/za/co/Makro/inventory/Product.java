@@ -1,4 +1,5 @@
-package za.co.makro.Inventory;
+package za.co.Makro.inventory;
+import za.co.Makro.company.Company;
 import java.util.Scanner;
 public class Product{
 private String productName;
@@ -10,18 +11,18 @@ private String manufactureDate;
 private String expiryDate;
 public static final int VAT =15;
 
-
-class Product(String productName,long barcode, int quantity,double price, double price,String manufactureDate,String expiryDate,int VAT){
 Product (){}
+
+
+public Product(String productName,long barcode, int quantity,double price,String manufactureDate,String expiryDate,int VAT){
 this.productName = productName;
 this.barcode = barcode;
 this.quantity = quantity;
 this.price = price;
-this.totalPrice;
-this.manufactureDate;
+this.totalPrice = price;
+this.manufactureDate = manufactureDate;
 this.expiryDate = expiryDate;
-this.VAT = 15;
-
+}
 
 public void setProductName(String productName){
 this.productName = productName;
@@ -46,14 +47,14 @@ return quantity;
 public void setPrice(double price){
 this.price = price;
 }
-public double getPrice();
+public double getPrice(){
 return price;
-
-public void setTotalAmount(totalAmount){
-this.totalAmount;
 }
-public double setTotalAmount();
-return totalAmount;
+public void setTotalPrice(double totalPrice){
+this.totalPrice = totalPrice;
+}
+public double setTotalPrice(){
+return totalPrice;
 }
 public void setManufactureDate(String manufactureDate){
 this.manufactureDate = manufactureDate;

@@ -59,19 +59,17 @@ return productName;
 public void setPrice(double price){
 this.price = price;
 }
-
-
-public void setBalance(double balance){
-this.balance = balance;
+ublic void setAmountDue(double amountDue){
+this.amountDue = amountDue;
 }
-public double getBalance(){
-return balance;
+public double getAmountDue(){
+return amountDue;
 }
-public void setAmountPaid(double amountPaid){
-this.amountPaid = amountPaid;
+public void setTotalBalance(double totalBalance){
+this.totalBalance = totalBalance;
 }
-public double getAmountPaid(){
-return amountPaid;
+public double getTotalBalance(){
+return totalBalance;
 }
 public void setTypeOfPayment(string typeOfPayment){
 this.typeOfPayment = typeOfPayment;
