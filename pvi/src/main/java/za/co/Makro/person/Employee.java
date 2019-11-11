@@ -1,34 +1,54 @@
-package za.co.MakroProject-3;
-import  java.util.Scanner;
+package za.co.Makro;
+import za.co.Makro.person.Person;
+import za.co.Makro.person.Employee;
+
 public class Employee extends Person{
 private long employeeNumber;
+private String position;
 private String username;
 private String password;
 
-Scanner sc = new Scanner(System.in);
-public void setUserName(userName,employeeNumber,password){
-this.userName;
-this.password;
-this.employeeName;
 
+public Employee(String firstName,String lastName,String address,String emailAddress,long phoneNumber,long employeeNumber,String position,String 
+username,String password){
+super(firstName,lastName,address,emailAddress,phoneNumber);
+this.employeeNumber = employeeNumber;
+this.position = position;
+this.username = username;
+this.password = password;
 }
-public void setUserName(){
-this.userName;
-}
-public String getUserName;
-return userName;
 
-public void  setPassword(password){
-this.password;
+public void  setEmployeeNumber(long EmployeeNumber){
+this.employeeNumber = employeeNumber;
 }
-public String getPassword();
+
+public long getEmployeeNumber(){
+return employeeNumber;
+}
+
+public void setPosition(String position){
+this.position = position;
+}
+
+public String getPosition(){
+return position;
+}
+
+public void setUsername(String username){
+this.username = username;
+}
+
+public String getUsername(){
+return username;
+}
+
+public void  setPassword(String password){
+this.password = password;
+}
+
+public String getPassword(){
 return password;
 
-public void  setEmployeeNumber(){
-this.employeeNumber;
-}
-public long getEmployeeNumber();
-return employeeNumber;
 }
 
 }

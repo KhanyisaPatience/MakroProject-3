@@ -1,4 +1,9 @@
 
+package za.co.Makro;
+import za.co.Makro.person.Person;
+import za.co.Makro.person.Employee;
+
+
 public abstract class Person{
 private String firstName;
 private String lastName;
@@ -57,13 +62,7 @@ public void setPhoneNumber(long phoneNumber){
 this.phoneNumber = phoneNumber;
 }
 
-public void register(){
-
-System.out.println("Registration");
+public abstract void register();
+public abstract void login();
 }
 
-public void login(){
-System.out.println("Login details");
-}
-r
-}

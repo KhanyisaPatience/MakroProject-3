@@ -5,7 +5,7 @@
  private int cardNumber;
  private int date;
  private int time;
- private String tellerName;
+ private String tellerNo;
  private int quantity;
  private String productName;
  private double price;
@@ -38,11 +38,11 @@ publc void setTime(int time){
 publi int getTime(){
 return time;
 }
-public void setTellerName(String tellerName){
- this.tellerName = tellerName;
+public void setTellerNo(String tellerNo){
+ this.tellerN0 = tellerNo;
 }
- public String getTellerName(){
- return tellerName;
+ public String getTellerNo(){
+ return tellerNo;
 }
  public void setQuantity(int quantity){
  this.quantity = quantity;

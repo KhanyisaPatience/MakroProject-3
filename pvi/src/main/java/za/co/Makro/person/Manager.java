@@ -1,67 +1,85 @@
-package za.co.Makro.person;
+package za.co.Makro;
+import za.co.Makro.Person;
+import za.co.Makro.Employee;
+import za.co.Makro.Manager;
 import java.util.Scanner;
-public class Manager extends employee{
-public void RegisterSupplier(Supplier){
-System.out.println("Enter  supplierNumber");
-String name = sc nextLine();
 
-System.out.println("Enter products");
-String products = sc.nextLine();
+public class Manager extends Employee{
 
 Scanner sc = new Scanner(System.in);
-public void setSupplierNumber(supplierNumber, products){
-this.supplierNumber;
-this.products;
-}
-public void setSupplierNumber(supplierNumber){
-this.supplierNumber;
-}
-public String getSupplierNumber(){
-return SupplierNumber;
-}
-public void setProducts(products){
-this.products;
-}
-public String getProducts(){
-return products;
+
+@Override
+public void register(){
+System.out.println("Customer Registration");
+System.out.print("Firstname: ");
+String firstName = sc.nextLine();
+
+System.out.print("Lastname: ");
+String lastName = sc.nextLine();
+
+System.out.print("Identity number: ");
+long idNumber = sc.nextLong();
+
+System.out.print("Gender: ");
+String gender = sc.nextLine();
+
+System.out.print("Age: ");
+int age = sc.nextInt();
+
+System.out.print("Date of Bitth: ");
+String dateOfBirth = sc.nextLine();
+
+System.out.print("Phone number: ");
+long phoneNumber = sc.nextLong();
+
+System.out.print("Address ");
+String address  = sc.nextLine();
+
+System.out.println("Email address: ");
+String emailAddress = sc.nextLine();
+
 }
 
-public void SupplierRegister(){
-System.out.println("Enter supplierNumber");
+public void registerSupplier(){
+
+System.out.println("Supplier Registration");
+
+System.out.print("Supplier Number: ");
 String supplierNumber = sc.nextLine();
 
-System.out.println("Enter products");
-String products = sc.nextLine();
+System.out.print("Registration Number: ");
+String registrationNumber = sc.nextLine();
+
+System.out.print("Name: ");
+String name = sc.nextLine();
+
+System.out.print("Branch: ");
+String branch = sc.nextLine();
+
+System.out.print("Address: ");
+String address =sc.nextLine();
+
+System.out.print("Telephone: ");
+long telephone = sc.nextLong();
+
+System.out.print("Email Address: ");
+String emailAddress = sc.nextLine();
 }
 
 public void ReceiveGoods(){
-System.out.println("Enter productName");
-String productName = sc.nextLine();
+System.out.println("Goods received");
 
-System.out.println("Enter quantity");
-int quantity = sc.nextInt();
-
-System.out.println("Enter barcode");
-long barcode = sc.nextLong();
-
-System.out.println("Enter manufactureDate");
-String manufacturedate = sc.nextline();
-
-System.out.println("Enter expiryDate");
-String expiryDate = sc.nextLine();
-
-System.out.println("Enter price");
-double price = sc.nextDouble();
 }
 
-public void CustomerRegister(){
-System.out.println("Enter cardNumber");
-String cardNumber = sc.nextLine();
+@Override
+public void login(){
 
-System.out.println("Enter employeeAddress");
-String employeeAddress = sc.nextLine();
+System.out.println("Employee Login Details");
+System.out.print("Username: ");
+String username = sc.nextLine();
 
-System.out.println("Enter password");
+System.out.println("Password: ");
 String password = sc.nextLine();
 }
+
 }
